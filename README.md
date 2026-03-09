@@ -40,9 +40,11 @@ LinkedIn: https://linkedin.com/in/danison-sunu
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=DanisonSunu&show_icons=true&theme=tokyonight)
+![GitHub Stats](https://github-profile-summary-cards.vercel.app/api/cards/stats?username=DanisonSunu&theme=tokyonight)
 
-![Top Languages](https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=DanisonSunu&layout=compact&theme=tokyonight)
+![Top Languages](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=DanisonSunu&theme=tokyonight)
+
+![Contribution Graph](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=DanisonSunu&theme=tokyonight)
 
 ---
 
