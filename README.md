@@ -1,5 +1,8 @@
 # Hi, I'm Danison Sunu 👋
 
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=36BCF7&lines=BTech+CSE+(Data+Science);Python+Developer;AI+%7C+Computer+Vision+Enthusiast;Power+BI+%7C+Data+Analysis)
+
+
 🎓 BTech CSE (Data Science)  
 📍 Jain University, Kochi  
 💡 Interested in AI, Data Science, and Computer Vision  
