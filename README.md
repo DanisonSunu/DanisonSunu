@@ -10,9 +10,8 @@
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Danison Sunu - Jain University, Kochi
+
 
 ### Project Description
 [2-3 lines about what your project does]
