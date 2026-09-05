@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ആരാ അത്? </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="tv">
+
+
+        <!-- HEADER -->
+
+        <div class="tv-header">
+
+            <span class="recording">
+
+                ● REC
+
+            </span>
+
+
+            <span class="camera">
+
+                PRESENCE MONITOR
+
+            </span>
+
+
+            <span id="clock">
+
+                LIVE
+
+            </span>
+
+        </div>
+
+
+        <!-- SCREEN -->
+
+        <section class="screen">
+
+
+            <div class="scanlines"></div>
+
+
+            <!-- TITLE -->
+
+            <div class="title">
+
+           
+
+                    
+
+                </div>
+
+
+                <h1>
+
+                    ആരാ അത്?
+
+                </h1>
+
+
+                <p>
+
+                    മനുഷ്യ സാന്നിധ്യ നിരീക്ഷണ സംവിധാനം
+
+                </p>
+
+            </div>
+
+
+            <!-- START -->
+
+            <button id="startButton">
+
+                ▶ START SYSTEM
+
+            </button>
+
+
+            <!-- RADAR -->
+
+            <div class="radar-container">
+
+                <div class="radar">
+
+
+                    <div
+                        class="ring ring1"
+                    ></div>
+
+                    <div
+                        class="ring ring2"
+                    ></div>
+
+                    <div
+                        class="ring ring3"
+                    ></div>
+
+
+                    <div
+                        class="line horizontal"
+                    ></div>
+
+                    <div
+                        class="line vertical"
+                    ></div>
+
+
+                    <div
+                        class="beam"
+                    ></div>
+
+
+                    <!-- PERSON -->
+
+                    <div
+                        id="radarDot"
+                    ></div>
+
+
+                    <!-- SENSOR -->
+
+                    <div
+                        class="center-dot"
+                    ></div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- STATUS -->
+
+            <div class="status-box">
+
+
+                <h2 id="status">
+
+                    👀 ആരെങ്കിലും വരുന്നുണ്ടോ...
+
+                </h2>
+
+
+                <p id="message">
+
+                    SYSTEM WAITING...
+
+                </p>
+
+
+                <div class="distance-display">
+
+                    DISTANCE:
+
+                    <span id="distance">
+
+                        ---
+
+                    </span>
+
+                    cm
+
+                </div>
+
+
+                <div
+                    id="zoneLabel"
+                    class="zone-label"
+                >
+
+                    SYSTEM IDLE
+
+                </div>
+
+
+            </div>
+
+
+            <!-- FOOTER -->
+
+            <div class="footer">
+
+                <span>
+
+                    PRESENCE DETECTION
+
+                </span>
+
+
+                <span>
+
+                    ❗DO NOT COME TOO CLOSE❗
+
+                </span>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- AUDIO -->
+
+    <audio
+        id="dialogueAudio"
+        preload="auto"
+    ></audio>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
