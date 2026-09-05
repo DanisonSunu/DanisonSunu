@@ -87,19 +87,19 @@ Make sure the ESP32 and laptop are connected to the same Wi-Fi network and that 
 
 <!-- Add Screenshot 1 Here -->
 
-![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 1](ss1.png)
 
 
 
 <!-- Add Screenshot 2 Here -->
 
-![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 2](ss2.png)
 
 
 
 <!-- Add Screenshot 3 Here -->
 
-![Screenshot 3](screenshots/screenshot3.png)
+![Screenshot 3](ss3.png)
 
 
 # Diagrams
@@ -114,7 +114,7 @@ For Hardware:
 
 <!-- Add your circuit diagram here -->
 
-[Circuit](docs/circuit.png)
+[Circuit](circuit.png)
 
 *The HC-SR04 ultrasonic sensor is connected to the ESP32 to measure the distance of nearby objects.*
 
@@ -127,7 +127,7 @@ For Hardware:
 
 ## Build Photos
 
-![Components](build/components.jpg)
+![Components](components.jpg)
 
 *ESP32 development board, HC-SR04 ultrasonic sensor, jumper wires, and USB connection.*
 
