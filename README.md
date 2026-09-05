@@ -1,265 +1,172 @@
-# 👀 ആരാ അത്? | Araaa Ath?
+````markdown
+# 👀 ആരാ അത്? (Araaa Ath?) 🎯
 
-## Human Presence Detection System... With Attitude 💀
+## Basic Details
 
-A completely unnecessary but highly entertaining **ESP32-based human presence detection system**.
+### Team Members
 
-The system detects a person using an **HC-SR04 ultrasonic sensor**, calculates how close they are, and reacts with progressively more aggressive Malayalam dialogues as they approach.
+- Team Lead: Danison Sunu - Jain University, Kochi
 
-Because apparently, detecting people politely was too boring.
+### Project Description
 
----
+**Araaa Ath? is an ESP32-powered human presence detection system with a personality problem.** Using an ultrasonic sensor, it detects how close someone is and reacts with different Malayalam dialogues as they approach. The closer you get, the more aggressively the system judges your existence.
 
-## 🎯 Project Idea
+### The Problem (that doesn't exist)
 
-The project continuously measures the distance between the sensor and a person.
+People walk around without receiving enough unnecessary commentary from electronic devices. There was clearly a desperate need for a machine that watches people approach and reacts accordingly.
 
-Depending on how close someone gets, the system:
+### The Solution (that nobody asked for)
 
-- Detects their presence
-- Tracks their distance
-- Updates a live radar interface
-- Shows different warning states
-- Plays random Malayalam dialogue reactions
-- Gets increasingly concerned when someone comes too close 💀
+We connected an HC-SR04 ultrasonic sensor to an ESP32 and made it track people's distance. The distance is sent over Wi-Fi to a Python server and a website that displays a live radar interface and plays increasingly dramatic Malayalam dialogues depending on how close the person gets.
 
----
+## Technical Details
 
-## ⚙️ How It Works
+### Technologies/Components Used
 
-```text
-Person → HC-SR04 Ultrasonic Sensor → ESP32 → Wi-Fi → Python Server → Live Website
-                                                    ↓
-                                      Radar + Distance + Malayalam Dialogue
-```
+For Software:
 
----
+- Languages: C++, Python, HTML, CSS, JavaScript
+- Framework: Flask
+- Libraries: WiFi.h, HTTPClient.h
+- Tools: Arduino IDE, Visual Studio Code, GitHub
 
-# 📏 Detection Zones
+For Hardware:
 
-| Distance | System Reaction | Dialogue Type |
-|---|---|---|
-| Above 150 cm | No person detected | None |
-| 100–150 cm | 👀 Someone is watching from far away | `Araaa Ath` dialogues |
-| 70–100 cm | 🤨 Person is getting closer | Curious reactions |
-| 40–70 cm | 😐 Getting suspicious | Warning dialogues |
-| Below 40 cm | 🚨 TOO CLOSE | Maximum Malayalam aggression 💀 |
-| Moving away | 😮 Person leaving | Leaving dialogues |
+- ESP32 Development Board
+- HC-SR04 Ultrasonic Distance Sensor
+- Jumper Wires
+- USB Cable
+- Laptop for running the server and web interface
 
----
+### Implementation
 
-# 🔊 Dialogue System
+For Software:
 
-### 👀 Watching From Far Away
-- `Araaa ath.wav`
-- `Araaa ath 2.wav`
-
-### 🤨 Getting Closer
-- `ivan etha.wav`
-- `entha mone.wav`
-- `pichakaran.wav`
-
-### 😐 More Closer
-- `kaun hai.wav`
-- `pichakaran.wav`
-- `vazhi mareda.wav`
-
-### 🚨 TOO CLOSE
-- `ammayum 1.wav`
-- `ammayum 2.wav`
-- `ammayum 3.wav`
-- `shamless creature.wav`
-
-### 👋 Going Away
-- `iyaaal poyoo.wav`
-- `oh god u again_.wav`
-
----
-
-# 🛠️ Technologies Used
-
-### Hardware
-- ESP32
-- HC-SR04 Ultrasonic Sensor
-
-### Software
-- Arduino IDE
-- Python
-- HTML
-- CSS
-- JavaScript
-
-### Communication
-- Wi-Fi
-- HTTP Requests
-
----
-
-# 📂 Project Structure
-
-```text
-useless_project_danison
-│
-├── server.py
-├── esp32_final.ino
-│
-└── website
-    ├── index.html
-    ├── style.css
-    ├── script.js
-    │
-    └── audio
-        ├── Araaa ath.wav
-        ├── Araaa ath 2.wav
-        ├── ivan etha.wav
-        ├── entha mone.wav
-        ├── pichakaran.wav
-        ├── kaun hai.wav
-        ├── vazhi mareda.wav
-        ├── ammayum 1.wav
-        ├── ammayum 2.wav
-        ├── ammayum 3.wav
-        ├── shamless creature.wav
-        ├── iyaaal poyoo.wav
-        └── oh god u again_.wav
-```
-
----
-
-# 🚀 How to Run
-
-## 1️⃣ Start the Python Server
+# Installation
 
 ```bash
+git clone https://github.com/DanisonSunu/DanisonSunu.git
+cd DanisonSunu
+pip install flask
+````
+
+# Run
+
+```bash
+cd server
 python server.py
 ```
 
-## 2️⃣ Start the Website
-
-Inside the `website` folder:
+In another terminal:
 
 ```bash
+cd website
 python -m http.server 8000
 ```
 
-Then open:
+Open the website in your browser:
 
 ```text
 http://localhost:8000
 ```
 
-## 3️⃣ Connect the ESP32
-
-Make sure:
-
-- ESP32 and laptop are connected to the same Wi-Fi network.
-- The laptop IP address inside the ESP32 code is correct.
-
-Example:
-
-```cpp
-const char* serverBase =
-"http://YOUR_LAPTOP_IP:5000/distance";
-```
-
----
-
-# 🔌 Sensor Connections
-
-| HC-SR04 | ESP32 |
-|---|---|
-| VCC | 5V |
-| GND | GND |
-| TRIG | GPIO 26 |
-| ECHO | GPIO 25 |
-
-⚠️ **Important:** The HC-SR04 Echo pin may output 5V. Use a voltage divider or level shifter to protect the ESP32 GPIO pin.
-
----
-
-# 🖥️ Website Features
-
-- 📡 Live radar animation
-- 🎯 Moving detection marker
-- 📏 Real-time distance display
-- 🟡 Far detection state
-- 🟠 Closer detection state
-- 🔴 Extreme proximity warning
-- 🔊 Distance-based Malayalam dialogues
-- 📺 Retro monitoring system interface
-
----
-
-# 🧠 The Logic
+Upload the Arduino code from:
 
 ```text
-AWAY
-  ↓
-FAR
-  ↓
-CLOSER
-  ↓
-NEAR
-  ↓
-TOO CLOSE 🚨
+Uselsesproj/Uselsesproj.ino
 ```
 
-Each time a person enters a new zone:
+to the ESP32 using the Arduino IDE.
 
-1. The radar updates.
-2. The website status changes.
-3. A dialogue is randomly selected.
-4. The dialogue plays completely.
-5. The next dialogue waits instead of interrupting the current one.
+Make sure the ESP32 and laptop are connected to the same Wi-Fi network and that the server IP address in the ESP32 code matches your laptop's local IP address.
+
+### Project Documentation
+
+# Screenshots (Add at least 3)
+
+<!-- Add Screenshot 1 Here -->
+
+![Screenshot 1](ADD_IMAGE_LINK_HERE)
+
+*Add a caption describing Screenshot 1.*
+
+<!-- Add Screenshot 2 Here -->
+
+![Screenshot 2](ADD_IMAGE_LINK_HERE)
+
+*Add a caption describing Screenshot 2.*
+
+<!-- Add Screenshot 3 Here -->
+
+![Screenshot 3](ADD_IMAGE_LINK_HERE)
+
+*Add a caption describing Screenshot 3.*
+
+# Diagrams
+
+<!-- Add your workflow or architecture diagram here -->
+
+![Workflow](ADD_DIAGRAM_IMAGE_LINK_HERE)
+
+*The workflow shows how the HC-SR04 sensor measures distance, the ESP32 sends the data through Wi-Fi to the Python server, and the website updates the radar interface and triggers dialogue reactions.*
+
+For Hardware:
+
+# Schematic & Circuit
+
+<!-- Add your circuit diagram here -->
+
+![Circuit](ADD_CIRCUIT_IMAGE_LINK_HERE)
+
+*The HC-SR04 ultrasonic sensor is connected to the ESP32 to measure the distance of nearby objects.*
+
+| HC-SR04 Pin | ESP32 Pin |
+| ----------- | --------- |
+| VCC         | 5V        |
+| GND         | GND       |
+| TRIG        | GPIO 26   |
+| ECHO        | GPIO 25   |
+
+# Build Photos
+
+<!-- Add Components Photo Here -->
+
+![Components](ADD_COMPONENTS_IMAGE_LINK_HERE)
+
+*ESP32 development board, HC-SR04 ultrasonic sensor, jumper wires, and USB connection.*
+
+<!-- Add Build Process Photo Here -->
+
+![Build](ADD_BUILD_IMAGE_LINK_HERE)
+
+*The HC-SR04 ultrasonic sensor connected to the ESP32.*
+
+<!-- Add Final Build Photo Here -->
+
+![Final](ADD_FINAL_BUILD_IMAGE_LINK_HERE)
+
+*Final working setup of the Araaa Ath? human presence detection system.*
+
+### Project Demo
+
+# Video
+
+[Add your demo video link here]
+
+*The demo shows a person approaching the sensor while the system detects their distance, updates the live radar interface, and responds with different Malayalam dialogues based on proximity.*
+
+# Additional Demos
+
+* Live Website: [Add GitHub Pages Link Here]
+* GitHub Repository: [Add Repository Link Here]
+
+## Team Contributions
+
+* Danison Sunu: ESP32 programming, ultrasonic sensor integration, Python server development, website development, UI design, audio integration, and overall project integration.
 
 ---
 
-# 🤔 Why Does This Exist?
+Made with ❤️ at TinkerHub Useless Projects
 
-Honestly?
-
-No reason.
-
-We wanted to make something unnecessary.
-
-And somehow ended up building a Wi-Fi-connected human detection system that insults people when they get too close.
-
-So here we are.
-
----
-
-# ⚠️ Known Limitations
-
-- HC-SR04 readings may fluctuate depending on the environment.
-- Laptop IP addresses may change depending on the Wi-Fi network.
-- Browser audio requires clicking **START SYSTEM** first.
-- The ultrasonic sensor detects objects, not specifically humans.
-
----
-
-# 🔮 Possible Future Improvements
-
-- Multiple ultrasonic sensors
-- Person detection using computer vision
-- ESP32-hosted web server
-- Mobile notifications
-- More Malayalam dialogues
-- LED indicators
-- Physical enclosure
-- An even more aggressive dialogue mode 💀
-
----
-
-# 👨‍💻 Made By
-
-**Danison**
-
-BTech CSE – Data Science
-
----
-
-## ⭐ Final Verdict
-
-> A technologically unnecessary solution to a problem that nobody had.
-
-# 👀 ആരാ അത്? 🔴
+```
+```
