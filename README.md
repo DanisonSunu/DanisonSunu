@@ -86,27 +86,25 @@ Make sure the ESP32 and laptop are connected to the same Wi-Fi network and that 
 
 <!-- Add Screenshot 1 Here -->
 
-![Screenshot 1](ADD_IMAGE_LINK_HERE)
+![Screenshot 1](https://drive.google.com/file/d/11ES3Sqlp06x-Sh28m-a9gFEKbWaK4Q75/view?usp=drive_link)
 
-*Add a caption describing Screenshot 1.*
+
 
 <!-- Add Screenshot 2 Here -->
 
-![Screenshot 2](ADD_IMAGE_LINK_HERE)
+![Screenshot 2](https://drive.google.com/file/d/1mKe8If3-WN6dfTacDSchOwM-LEGixlND/view?usp=drive_link)
 
-*Add a caption describing Screenshot 2.*
+
 
 <!-- Add Screenshot 3 Here -->
 
-![Screenshot 3](ADD_IMAGE_LINK_HERE)
+![Screenshot 3](https://drive.google.com/file/d/1Q6rgxyl5lmVw7T_hBntNCyhfO9iAUXHI/view?usp=drive_link)
 
 *Add a caption describing Screenshot 3.*
 
 # Diagrams
 
 <!-- Add your workflow or architecture diagram here -->
-
-![Workflow](ADD_DIAGRAM_IMAGE_LINK_HERE)
 
 *The workflow shows how the HC-SR04 sensor measures distance, the ESP32 sends the data through Wi-Fi to the Python server, and the website updates the radar interface and triggers dialogue reactions.*
 
@@ -116,7 +114,7 @@ For Hardware:
 
 <!-- Add your circuit diagram here -->
 
-![Circuit](ADD_CIRCUIT_IMAGE_LINK_HERE)
+![Circuit](https://drive.google.com/file/d/1xVSgDwfTxjB_4po9Fe_AeESeJZ0oWFD4/view?usp=drive_link)
 
 *The HC-SR04 ultrasonic sensor is connected to the ESP32 to measure the distance of nearby objects.*
 
@@ -129,36 +127,23 @@ For Hardware:
 
 # Build Photos
 
-<!-- Add Components Photo Here -->
-
-![Components](ADD_COMPONENTS_IMAGE_LINK_HERE)
+![Components](https://drive.google.com/file/d/1Z6xIZHjiw2hYKhH3xFBOb3NfGPv6rtEA/view?usp=drive_link)
 
 *ESP32 development board, HC-SR04 ultrasonic sensor, jumper wires, and USB connection.*
-
-<!-- Add Build Process Photo Here -->
-
-![Build](ADD_BUILD_IMAGE_LINK_HERE)
-
-*The HC-SR04 ultrasonic sensor connected to the ESP32.*
-
-<!-- Add Final Build Photo Here -->
-
-![Final](ADD_FINAL_BUILD_IMAGE_LINK_HERE)
 
 *Final working setup of the Araaa Ath? human presence detection system.*
 
 ### Project Demo
 
 # Video
-
-[Add your demo video link here]
+[Demo Video](https://drive.google.com/file/d/1ckp7e3_xMpJX41Zr9tkuCIT6XcZrpCNg/view?usp=drivesdk)
 
 *The demo shows a person approaching the sensor while the system detects their distance, updates the live radar interface, and responds with different Malayalam dialogues based on proximity.*
 
 # Additional Demos
 
-* Live Website: [Add GitHub Pages Link Here]
-* GitHub Repository: [Add Repository Link Here]
+* Live Website: [ GitHub Pages Link ](https://danisonsunu.github.io/uselessproject_danison/)
+* GitHub Repository: [Repository Link ](https://github.com/DanisonSunu/DanisonSunu)
 
 ## Team Contributions
 
