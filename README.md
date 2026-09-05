@@ -1,9 +1,8 @@
-````markdown
+
 # 👀 ആരാ അത്? (Araaa Ath?) 🎯
 
-## Basic Details
 
-### Team Members
+## Team Members
 
 - Team Lead: Danison Sunu - Jain University, Kochi
 
@@ -80,9 +79,9 @@ to the ESP32 using the Arduino IDE.
 
 Make sure the ESP32 and laptop are connected to the same Wi-Fi network and that the server IP address in the ESP32 code matches your laptop's local IP address.
 
-### Project Documentation
+# Project Documentation
 
-# Screenshots (Add at least 3)
+# Screenshots 
 
 <!-- Add Screenshot 1 Here -->
 
@@ -100,7 +99,6 @@ Make sure the ESP32 and laptop are connected to the same Wi-Fi network and that 
 
 ![Screenshot 3](https://drive.google.com/file/d/1Q6rgxyl5lmVw7T_hBntNCyhfO9iAUXHI/view?usp=drive_link)
 
-*Add a caption describing Screenshot 3.*
 
 # Diagrams
 
@@ -125,7 +123,7 @@ For Hardware:
 | TRIG        | GPIO 26   |
 | ECHO        | GPIO 25   |
 
-# Build Photos
+## Build Photos
 
 ![Components](https://drive.google.com/file/d/1Z6xIZHjiw2hYKhH3xFBOb3NfGPv6rtEA/view?usp=drive_link)
 
@@ -133,14 +131,14 @@ For Hardware:
 
 *Final working setup of the Araaa Ath? human presence detection system.*
 
-### Project Demo
+## Project Demo
 
-# Video
+## Video
 [Demo Video](https://drive.google.com/file/d/1ckp7e3_xMpJX41Zr9tkuCIT6XcZrpCNg/view?usp=drivesdk)
 
 *The demo shows a person approaching the sensor while the system detects their distance, updates the live radar interface, and responds with different Malayalam dialogues based on proximity.*
 
-# Additional Demos
+## Additional Demos
 
 * Live Website: [ GitHub Pages Link ](https://danisonsunu.github.io/uselessproject_danison/)
 * GitHub Repository: [Repository Link ](https://github.com/DanisonSunu/DanisonSunu)
@@ -151,7 +149,6 @@ For Hardware:
 
 ---
 
-Made with ❤️ at TinkerHub Useless Projects
 
 ```
 ```
