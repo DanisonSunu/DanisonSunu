@@ -114,7 +114,7 @@ For Hardware:
 
 <!-- Add your circuit diagram here -->
 
-![Circuit](https://drive.google.com/file/d/1xVSgDwfTxjB_4po9Fe_AeESeJZ0oWFD4/view?usp=drive_link)
+[Circuit](https://drive.google.com/file/d/1xVSgDwfTxjB_4po9Fe_AeESeJZ0oWFD4/view?usp=drive_link)
 
 *The HC-SR04 ultrasonic sensor is connected to the ESP32 to measure the distance of nearby objects.*
 
